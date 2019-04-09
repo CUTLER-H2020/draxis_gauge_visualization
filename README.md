@@ -2,7 +2,7 @@
 
 > Draxis Plugin
 
-![alt text](https://raw.githubusercontent.com/CUTLER-H2020/draxis_gauce_visualization/master/draxis gauce.png)
+![alt text](/CUTLER-H2020/draxis_gauce_visualization/blob/master/draxis%20gauce.png?raw=true)
 
 ---
 
