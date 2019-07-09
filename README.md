@@ -37,3 +37,13 @@ See the [kibana contributing guide](https://github.com/elastic/kibana/blob/maste
   Run the server tests using mocha.
 
 For more information about any of these commands run `yarn ${task} --help`. For a full list of tasks checkout the `package.json` file, or run `yarn run`.
+
+## Installing plugin
+
+- log in into your server
+- cd your_kibana_installation_path
+- if you are using docker run: docker exec -it { container_name } bash
+- install plugin by running: bin/kibana-plugin install https://github.com/CUTLER-H2020/draxis_gauce_visualization.git
+- this step takes about 5 minutes
+- done!
+
