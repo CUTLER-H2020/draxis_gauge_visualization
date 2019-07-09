@@ -12,6 +12,8 @@ This Kibana plugin is created using amCharts, a JavaScript library for data visu
 customized to visualize certain Key Performance Indicators in the form of a gauge diagram based on the
 following equation:
 
+(Average yearly concentration of parameter x for the year Y)/(Average yearly concentration of parameter x for the year Z)  ∙ 100
+
 The users can select years Y and Z through the plugin from drop-down lists.
 
 ## Version
