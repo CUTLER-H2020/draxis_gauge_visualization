@@ -1,4 +1,4 @@
-# Draxis Gauce Visualization
+# Draxis Gauge Visualization
 
 > Draxis Plugin
 
