@@ -6,6 +6,20 @@
 
 ---
 
+## About
+
+This Kibana plugin is created using amCharts, a JavaScript library for data visualizations. It is specifically
+customized to visualize certain Key Performance Indicators in the form of a gauge diagram based on the
+following equation:
+
+The users can select years Y and Z through the plugin from drop-down lists.
+
+## Version
+- Plugin version: 0.0.7
+- Made for Kibana version: 6.5.4
+
+For any inquires contact Stelios Kitziris (skitziris@draxis.gr)
+
 ## development
 
 See the [kibana contributing guide](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md) for instructions setting up your development environment. Once you have completed that, use the following yarn scripts.
