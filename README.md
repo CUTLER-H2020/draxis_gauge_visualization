@@ -12,12 +12,14 @@ This Kibana plugin is created using amCharts, a JavaScript library for data visu
 customized to visualize certain Key Performance Indicators in the form of a gauge diagram based on the
 following equation:
 
-![alt text](https://raw.githubusercontent.com/CUTLER-H2020/draxis_gauce_visualization/master/image%20(1).png)
-
+![alt text](<https://raw.githubusercontent.com/CUTLER-H2020/draxis_gauce_visualization/master/image%20(1).png>)
 
 The users can select years Y and Z through the plugin from drop-down lists.
 
+More information can be found in deliverable 5.2 here: https://zenodo.org/record/3386009#.XYirMCj7RnI.
+
 ## Version
+
 - Plugin version: 0.0.7
 - Made for Kibana version: 6.5.4
 
@@ -63,4 +65,3 @@ For more information about any of these commands run `yarn ${task} --help`. For 
 - install plugin by running: bin/kibana-plugin install https://github.com/CUTLER-H2020/draxis_gauce_visualization.git
 - this step takes about 5 minutes
 - done!
-
