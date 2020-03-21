@@ -37,11 +37,25 @@ module.controller('KbnRadarVisController', function(
 
   $scope.prepareData = () => {
     $scope.startedDatePollutant = $scope.esResponse.rows.filter(row => {
-      return row['col-0-2'] === parseInt($scope.startDate);
+      let date = row['col-0-2'];
+      if (typeof(date) == 'string') {
+        return parseInt(date) === parseInt($scope.startDate);
+      } else {
+        // date is already int (number)
+        return date === parseInt($scope.startDate);        
+      }
+      // return row['col-0-2'] === parseInt($scope.startDate);
     })[0];
 
     $scope.endDatePollutant = $scope.esResponse.rows.filter(row => {
-      return row['col-0-2'] === parseInt($scope.endDate);
+      let date = row['col-0-2'];
+      if (typeof(date) == 'string') {
+        return parseInt(date) === parseInt($scope.endDate);
+      } else {
+        // date is already int (number)
+        return date === parseInt($scope.endDate);        
+      }
+      // return row['col-0-2'] === parseInt($scope.endDate);
     })[0];
 
     $scope.calculatePollutan();
@@ -60,7 +74,17 @@ module.controller('KbnRadarVisController', function(
 
   $scope.updateDates = () => {
     $scope.availableDates = $scope.esResponse.rows.map(row => {
-      return row['col-0-2'];
+      // In order this plugin to work properly
+      // it requires the date to be numbers. 
+      // In our new indices some they have the 'year' field as int/float and other as string
+      // We should handle this situation so as it works in either case
+      let date = row['col-0-2'];
+      if (typeof(date) == 'string') {
+        return parseInt(date);
+      } else {
+        // date is already int (number)
+        return date;        
+      }
     });
 
     $scope.availableDates.sort().reverse();
